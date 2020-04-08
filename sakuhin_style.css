@@ -1,0 +1,88 @@
+img {
+  width: 300px;
+  height: 300px;
+}
+
+h1 {
+	text-decoration:none;
+	font-size: 80px;
+	text-align: center;
+	font-weight:bold;
+	
+}
+
+h2 {
+	font-size: 50px;
+	text-align: center;
+}
+
+a{   /*pour tous les boutons*/
+	text-decoration:none; /*pour pas avoir de trait en dessous*/
+	color:black;
+	transition:letter-spacing,1s;
+	}
+a:hover{  /*les lettres vont s'éloigner quand je mets la souris dessus*/
+	letter-spacing:.5em;
+}
+
+li{
+	list-style:none;
+}
+
+html,body{
+	margin:0;
+	padding:0;
+	font-weight:bold;
+	
+}
+	
+.clic{
+		position:relative; /*je sais pas trop pourquoi mais quand ya pas ça ya le trait qui bouge*/
+		
+}
+
+.clic:before{    /*le trait*/
+	  content:"";
+	  display:block;
+	  width:18%;  /*la longueur du trait*/
+	  height: 3px; /*l'épaisseur du trait*/
+	  position:absolute; /*la place du trait */
+	  top: 85%; /*la hauteur du trait*/
+	  left:41%; /*la place du trait à l'horizontal*/
+	  background:black;
+	  transition:opacity,1s;
+	  
+}
+
+			
+.clic:hover:before{
+	opacity:0.5;
+	width:22%;  /*la longueur change*/
+	left:39%;  /*le commencement du trait se décale vers la left*/
+	}
+	
+	
+	
+.modoru{
+	font-size: 20px;
+	text-align:left;
+	font-family:arial;
+	font-variant: small-caps
+}
+
+#accueil{
+	font-size:200px;
+	text-align:center;
+}
+
+.titre{
+	font-size:30px;
+	text-align:center;
+}
+
+.texte{
+	text-align:center;
+	font-size:15px;
+	font-family:sans-serif;
+}
+
